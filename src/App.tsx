@@ -1,18 +1,21 @@
 import { Container, Header, ContentContainer } from './styles';
-import poweredImage from '../public/assets/powered.png';
+import poweredImage from '/assets/powered.png';
+import { LeftSide } from './components/LeftSide';
+import { RightSide } from './components/RightSide';
+import { observer } from 'mobx-react-lite';
 
-function App() {
+const App = observer(() => {
   return (
     <Container>
       <Header>
         <img src={poweredImage} alt="" />
       </Header>
       <ContentContainer>
-        <div className="leftSide">...</div>
-        <div className="rightSide">...</div>
+        <LeftSide />
+        <RightSide />
       </ContentContainer>
     </Container>
   );
-}
+});
 
 export default App;
