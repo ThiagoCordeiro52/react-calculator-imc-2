@@ -6,8 +6,8 @@ export const LeftSide = observer(() => {
   const formStore = useContext(FormStore);
   const { heightField, setHeightField, weightField, setWeightField } =
     formStore;
-  function handleCalculateButton(event) {
-    event?.preventDefault();
+  function handleCalculateButton(event: React.FormEvent<HTMLInputElement>) {
+    event.preventDefault();
     if (heightField && weightField) {
     } else {
       alert('Digite todos os campos');

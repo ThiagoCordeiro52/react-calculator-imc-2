@@ -4,17 +4,22 @@ import { LeftSide } from './components/LeftSide';
 import { RightSide } from './components/RightSide';
 import { observer } from 'mobx-react-lite';
 
+import { GlobalStyles } from './globalStyles';
+
 const App = observer(() => {
   return (
-    <Container>
-      <Header>
-        <img src={poweredImage} alt="" />
-      </Header>
-      <ContentContainer>
-        <LeftSide />
-        <RightSide />
-      </ContentContainer>
-    </Container>
+    <>
+      <GlobalStyles />
+      <Container>
+        <Header>
+          <img src={poweredImage} alt="" />
+        </Header>
+        <ContentContainer>
+          <LeftSide />
+          <RightSide />
+        </ContentContainer>
+      </Container>
+    </>
   );
 });
 
