@@ -6,6 +6,8 @@ import { observer } from 'mobx-react-lite';
 
 import { GlobalStyles } from './globalStyles';
 
+import { levels, calculateImc } from './helpers/imc';
+
 const App = observer(() => {
   return (
     <>

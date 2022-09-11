@@ -10,13 +10,17 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --white: #FFF;
     --background: #F2F3F5;
-    --gray-100: #6A7D8B;
-    --gray-200: #3A4B5C;
+
+    --gray-100: #96a3ab;
+    --gray-200: #6A7D8B;
+    --gray-300: #3A4B5C;
+
     --text: #666;
     --text-highlight: #B3B9FF;
     --title: #2E384D;
-    --red: #E83F5B;
-    --green: #4CD62B;
+    --red: #C3423F;
+    --green: #0EAD69;
+    --yellow: #E2B039;
     --blue: #227C9D;
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;

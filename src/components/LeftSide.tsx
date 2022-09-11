@@ -1,5 +1,5 @@
 import { ChangeEvent, createContext, useContext } from 'react';
-import FormStore from '../store/FormStore';
+import FormStore from '../stores/FormStore';
 import { observer } from 'mobx-react-lite';
 
 export const LeftSide = observer(() => {

@@ -28,7 +28,7 @@ export const ContentContainer = styled.div`
   .leftSide p {
     font: 1rem;
     margin-bottom: 2.5rem;
-    color: var(--gray-100);
+    color: var(--gray-300);
   }
 
   .leftSide input {
