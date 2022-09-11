@@ -1,7 +1,7 @@
 import { Container, Header, ContentContainer } from './styles';
 import poweredImage from '/assets/powered.png';
-import { LeftSide } from './components/LeftSide';
-import { RightSide } from './components/RightSide';
+import { LeftSide } from './components/LeftSide/LeftSide';
+import { RightSide } from './components/RightSide/RightSide';
 import { observer } from 'mobx-react-lite';
 
 import { GlobalStyles } from './globalStyles';

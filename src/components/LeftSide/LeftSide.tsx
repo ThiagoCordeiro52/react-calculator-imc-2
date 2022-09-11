@@ -1,12 +1,14 @@
 import { ChangeEvent, createContext, useContext } from 'react';
-import FormStore from '../stores/FormStore';
+import FormStore from '../../stores/FormStore';
 import { observer } from 'mobx-react-lite';
+
+import { Container } from './styles';
 
 export const LeftSide = observer(() => {
   const formStore = useContext(FormStore);
   const { heightField, setHeightField, weightField, setWeightField } =
     formStore;
-  function handleCalculateButton(event: React.FormEvent<HTMLInputElement>) {
+  function handleCalculateButton(event: React.MouseEvent) {
     event.preventDefault();
     if (heightField && weightField) {
     } else {
@@ -15,7 +17,7 @@ export const LeftSide = observer(() => {
   }
 
   return (
-    <div className="leftSide">
+    <Container>
       <h1>Calcule o seu IMC.</h1>
       <p>
         IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
@@ -37,6 +39,6 @@ export const LeftSide = observer(() => {
         />
         <button onClick={handleCalculateButton}>Calcular</button>
       </form>
-    </div>
+    </Container>
   );
 });
